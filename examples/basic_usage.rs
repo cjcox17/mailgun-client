@@ -1,7 +1,7 @@
 use dotenvy::dotenv;
+use mailgun_client::Email;
 use mailgun_client::MailgunClient;
-use mailgun_client::client::Email;
-use mailgun_client::client::Region;
+use mailgun_client::Region;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

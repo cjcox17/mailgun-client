@@ -8,4 +8,4 @@
 pub mod client;
 
 // Re-export the main types for convenience
-pub use client::MailgunClient;
+pub use client::*;
