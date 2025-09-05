@@ -1,0 +1,28 @@
+[package]
+name = "mailgun-client"
+version = "0.1.2"
+edition = "2024"
+authors = [" <cjcox17@icloud.com>"]
+description = "A Rust client library for Mailgun"
+homepage = "https://github.com/cjcox17/mailgun-client"
+repository = "https://github.com/cjcox17/mailgun-client"
+license = "MIT OR Apache-2.0"
+keywords = ["mailgun", "rest", "api"]
+categories = ["api-bindings", "web-programming::http-client"]
+readme = "README.md"
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = { version = "1.0.140", features = ["preserve_order"] }
+futures = "0.3.31"
+indexmap = { version = "2.10.0", features = ["serde"] }
+chrono = { version = "0.4.41", features = ["serde"] }
+thiserror = "2.0.16"
+reqwest = { version = "0.12.22", default-features = false, features = [
+    "json",
+    "rustls-tls",
+] }
+tokio = { version = "1.46.1", features = ["full"] }
+
+[dev-dependencies]
+dotenvy = "0.15.7"
