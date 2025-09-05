@@ -7,7 +7,7 @@ description = "A Rust client library for Mailgun"
 homepage = "https://github.com/cjcox17/mailgun-client"
 repository = "https://github.com/cjcox17/mailgun-client"
 license = "MIT OR Apache-2.0"
-keywords = ["mailgun", "rest", "api"]
+keywords = ["mailgun", "sinch", "rest", "api"]
 categories = ["api-bindings", "web-programming::http-client"]
 readme = "README.md"
 
